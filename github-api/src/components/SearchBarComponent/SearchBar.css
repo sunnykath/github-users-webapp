@@ -1,0 +1,11 @@
+.SearchBarContainer {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+/* 
+.Row div{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+} */

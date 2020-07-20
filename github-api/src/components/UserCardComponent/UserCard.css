@@ -1,0 +1,18 @@
+.UserCardContainer{
+    max-width: 300px;
+    /* max-height: 250px; */
+    margin: auto;
+    ;
+}
+
+.UserCoverImage{
+    height: 250px !important;
+    max-width: 250px;
+    margin: auto;
+}
+
+/* .MediaCardDescription{
+    height: 200px;
+    overflow-y: scroll;
+    overflow-wrap: break-word;
+} */

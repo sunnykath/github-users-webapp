@@ -1,0 +1,12 @@
+@import '~antd/dist/antd.css';
+
+.row {
+    font-size: large;
+}
+
+.navbar {
+    padding: 20px;
+    background-color: #24292e;
+    color: #fff;
+    font-size: x-large;
+}
