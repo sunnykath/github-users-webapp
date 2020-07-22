@@ -2,7 +2,6 @@ import React from 'react';
 import {Card} from 'antd';
 import Meta from 'antd/lib/card/Meta';
 import './UserCard.css'
-import { OmitProps } from 'antd/lib/transfer/ListBody';
 
 
 interface IMediaCardProps {
