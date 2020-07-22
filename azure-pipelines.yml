@@ -22,8 +22,8 @@ steps:
   - script: |
       cd $(rootDir)
       npm install
-      npm run build
-      cd..
+      npm start
+      cd ..
   - task: ArchiveFiles@2
     inputs:
       rootFolderOrFile: '$(buildDir)'
