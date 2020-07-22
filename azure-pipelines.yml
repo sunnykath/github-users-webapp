@@ -22,22 +22,22 @@ steps:
   - script: |
       cd $(rootDir)
       npm install
-      npm build
+      npm run build
       cd ..
     displayName: 'npm install and build'
     
   - task: ArchiveFiles@2
     inputs:
       rootFolderOrFile: '$(buildDir)'
+      includeRootFolder: false
+      archiveType: 'zip'
+      archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+      replaceExistingArchive: true
 
   - task: PublishBuildArtifacts@1
     inputs:
       PathtoPublish: '$(Build.ArtifactStagingDirectory)'
       ArtifactName: 'drop'
       publishLocation: 'Container'
-      includeRootFolder: false
-      archiveType: 'zip'
-      archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
-      replaceExistingArchive: true
 
 
