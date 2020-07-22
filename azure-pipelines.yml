@@ -24,6 +24,8 @@ steps:
       npm install
       npm start
       cd ..
+    displayName: 'npm install and build'
+    
   - task: ArchiveFiles@2
     inputs:
       rootFolderOrFile: '$(buildDir)'
@@ -36,6 +38,5 @@ steps:
       archiveType: 'zip'
       archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
       replaceExistingArchive: true
-    displayName: 'npm install and build'
 
 
