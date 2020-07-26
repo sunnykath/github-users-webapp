@@ -1,14 +1,21 @@
 @import '~antd/dist/antd.css';
 
 
-.searchbar {
-    display: flex;
-    justify-content: center;
-}
-
 .navbar {
     padding: 20px;
     background-color: #24292e;
     color: #fff;
     font-size: x-large;
+}
+
+.searchbar {
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    padding: 20px;
+    background-color: #24292e;
+    color: #fff;    
+    font-size: large;
 }

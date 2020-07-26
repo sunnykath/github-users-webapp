@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { IUserInput } from "./common/interfaces";
 import SearchBar from './components/SearchBarComponent/SearchBar';
 import ResultsGrid from './components/ResultsGridComponent/ResultsGrid';
+import {Layout} from 'antd';
 import './App.css';
 
 function App() {
@@ -19,14 +20,17 @@ function App() {
 
   return (
     <div>
-      <div className='navbar'>
-        Search a GitHub User
-      </div>
-      <div className='searchbar'>
-        <SearchBar SetUserInput={(a: IUserInput) => SetUserInput(a)}/>
-      </div>
-      <ResultsGrid SearchQuery={UserInput.SearchQuery} StartDate={UserInput.StartDate} EndDate={UserInput.EndDate}/>
-    </div>
+      <Layout>
+        <div className='navbar'>
+          Search a GitHub User
+        </div>
+        <div className='searchbar'>
+          <SearchBar SetUserInput={(a: IUserInput) => SetUserInput(a)}/>
+        </div>
+        <ResultsGrid SearchQuery={UserInput.SearchQuery} StartDate={UserInput.StartDate} EndDate={UserInput.EndDate}/>
+        <Layout style={{ textAlign: 'center' }} className='footer'>GitHub User Search - Created by Suyash Kathuria</Layout>
+      </Layout>
+    </div>    
   );
 }
 
