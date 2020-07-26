@@ -14,7 +14,7 @@ interface IMediaCardProps {
 function UserCard(props: IMediaCardProps) {
     return (
         <div>
-            <a href = {props.Link} target="_blank">
+            <a href = {props.Link} target="_blank" rel="noopener noreferrer">
                 <Card hoverable={true}
                     className="UserCardContainer"
                     cover = {<img alt="user-icon" src={props.ImageUrl} className='UserCoverImage' /> }

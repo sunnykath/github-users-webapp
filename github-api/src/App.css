@@ -1,7 +1,9 @@
 @import '~antd/dist/antd.css';
 
-.row {
-    font-size: large;
+
+.searchbar {
+    display: flex;
+    justify-content: center;
 }
 
 .navbar {

@@ -36,29 +36,23 @@ const handleSubmit = () => {
         }
         props.SetUserInput(UserInput);
     } else {
-        // setHasFocus(true);
+        
     }
 }
-// const [HasFocus, setHasFocus] = useState<boolean>(false);
-
 
     return (
         <div className="SearchBarContainer">
             <Row gutter={10}>
                 <Col>
                     <Input
-                        // onClick={() => setHasFocus(true)}
                         placeholder="Username"
                         onChange={e => handleSearchQueryChange(e.target.value)}
-                        // onChange={value => console.log(value.target.value)}
                     />
                 </Col>
                 <Col>
                     <DatePicker.RangePicker
-                        // defaultValue ={[moment('2014-08-12'), moment('2020-05-12')]}
-                        // onChange={value => handleDateChange(value.target.toDate)}
                         onChange={(_, values) =>handleDateChange(values)}
-                        // onChange={(value, strings) => console.log(strings)}
+                        placeholder={["Joined in - Start Date", "Joined in - End Date"]}
                     />
                 </Col>
                 <Col>

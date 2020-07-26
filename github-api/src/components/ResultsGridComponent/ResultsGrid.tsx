@@ -4,11 +4,6 @@ import UserCard from '../UserCardComponent/UserCard'
 
 import './ResultsGrid.css';
 
-// interface IState {
-//     login: any[];
-//     avatar_url: any[];
-//     name: any[];
-// }
 
 interface IMediaGridProps {
     SearchQuery: (string | null);
@@ -41,8 +36,7 @@ function ResultsGrid(props: IMediaGridProps) {
             return;
         }
         Cards.push(
-            // <Grid key={"card_"+i} item sm={6} md={4} lg={3} className="MediaGridCard">
-        <UserCard ImageUrl={el.avatar_url} UserName={el.login} Link={el.html_url} />
+            <UserCard ImageUrl={el.avatar_url} UserName={el.login} Link={el.html_url} />
         )
     })
 
