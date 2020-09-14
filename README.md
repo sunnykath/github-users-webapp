@@ -1,5 +1,9 @@
 # MSA Phase 1 - Front End Development Path
 
+This is a Wep-App which uses the GitHub API to search users. You can type in any username in the search box and select a date range for when the user joined github. It will list all the matching results. 
+
+Developed in React-Typescript and deployed through Azure.
+
 You can visit the deployed webapp by clicking this [link](https://search-github-users.azurewebsites.net/) or by copy-pasting this link into a browser https://search-github-users.azurewebsites.net/
 
 
