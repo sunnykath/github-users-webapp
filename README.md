@@ -1,4 +1,5 @@
-# MSA Phase 1 - Front End Development Path
+# GitHub Users Web app
+###### MSA Phase 1 - Front End Development Path
 
 This is a Wep-App which uses the GitHub API to search users. You can type in any username in the search box and select a date range for when the user joined github. It will list all the matching results. 
 
